@@ -11,6 +11,7 @@ Source0:	http://cheeseshop.python.org/packages/source/R/Rabbyt/%{module}-%{versi
 URL:		http://matthewmarshall.org/projects/rabbyt/
 BuildRequires:	ncurses-devel
 BuildRequires:	python-devel
+BuildRequires:	python-Pyrex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
