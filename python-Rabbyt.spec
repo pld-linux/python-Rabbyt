@@ -4,7 +4,7 @@ Summary(pl.UTF-8):	Biblioteka dla Pythona do rozwoju gier
 Name:		python-%{module}
 Version:	0.0.3
 Release:	0.1
-License:	GPL v2.1+
+License:	LGPL v2.1+
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/R/Rabbyt/%{module}-%{version}.tar.gz
 # Source0-md5:	989cc0620d7ddf6aae1ff75fe38e02af
