@@ -2,12 +2,12 @@
 Summary:	Library for Python to game development
 Summary(pl.UTF-8):	Biblioteka dla Pythona do rozwoju gier
 Name:		python-%{module}
-Version:	0.0.3
+Version:	0.0.4
 Release:	0.1
 License:	LGPL v2.1+
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/R/Rabbyt/%{module}-%{version}.tar.gz
-# Source0-md5:	989cc0620d7ddf6aae1ff75fe38e02af
+# Source0-md5:	16cd9580a8b2f53d890c0cdf4f81e73c
 URL:		http://matthewmarshall.org/projects/rabbyt/
 BuildRequires:	ncurses-devel
 BuildRequires:	python-devel
@@ -36,7 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__python} setup.py install \
 	--optimize=2 \
 	--root=$RPM_BUILD_ROOT \
-	--install-lib=%{py_sitescriptdir} \
+	--install-lib=%{py_sitescriptdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
