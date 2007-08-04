@@ -33,9 +33,10 @@ gier. Posiada dwa cele:
 %prep
 %setup -q -n %{module}-%{version}
 
-sed -i -e "s/'-O3'/'%{rpmcflags}'/" setup.py
+sed -i -e "s/'-O3',\?//" setup.py
 
 %build
+CFLAGS="%{rpmcflags}" \
 %{__python} setup.py build
 
 %install
