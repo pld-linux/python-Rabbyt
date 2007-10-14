@@ -1,4 +1,6 @@
-%define		module  Rabbyt
+#
+%define module	Rabbyt
+#
 Summary:	Library for Python to game development
 Summary(pl.UTF-8):	Biblioteka dla Pythona do tworzenia gier
 Name:		python-%{module}
@@ -12,6 +14,7 @@ URL:		http://matthewmarshall.org/projects/rabbyt/
 BuildRequires:	ncurses-devel
 BuildRequires:	python-Pyrex
 BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	sed >= 4.0
@@ -20,13 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Rabbyt is a sprite library for Python with game development in mind.
-It has two goals: 
-1. Be fast, without sacrificing ease of use. 
+It has two goals:
+1. Be fast, without sacrificing ease of use.
 2. Be easy to use, without sacrificing speed.
 
 %description -l pl.UTF-8
 Rabbyt jest małą biblioteką dla Pythona służącą do tworzenia
-gier. Posiada dwa cele: 
+gier. Posiada dwa cele:
 1. Być szybką bez utraty prostoty użycia.
 2. Być prostą w użyciu bez utraty szybkości.
 
