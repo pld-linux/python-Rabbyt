@@ -4,12 +4,12 @@
 Summary:	Library for Python to game development
 Summary(pl.UTF-8):	Biblioteka dla Pythona do tworzenia gier
 Name:		python-%{module}
-Version:	0.8.1
-Release:	3
+Version:	0.8.2
+Release:	1
 License:	MIT
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/R/Rabbyt/%{module}-%{version}.tar.gz
-# Source0-md5:	30c143d133a6abaf8ab2ba3516ae7fc2
+# Source0-md5:	b8a90d1793ce37fdac47f54aa08a94f4
 URL:		http://matthewmarshall.org/projects/rabbyt/
 BuildRequires:	ncurses-devel
 BuildRequires:	python-Pyrex
