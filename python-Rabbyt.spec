@@ -4,12 +4,12 @@
 Summary:	Library for Python to game development
 Summary(pl.UTF-8):	Biblioteka dla Pythona do tworzenia gier
 Name:		python-%{module}
-Version:	0.8.2
+Version:	0.8.3
 Release:	1
 License:	MIT
 Group:		Libraries/Python
-Source0:	http://cheeseshop.python.org/packages/source/R/Rabbyt/%{module}-%{version}.tar.gz
-# Source0-md5:	b8a90d1793ce37fdac47f54aa08a94f4
+Source0:	http://cheeseshop.python.org/packages/source/R/Rabbyt/%{module}-%{version}.zip
+# Source0-md5:	bb603a5cb02f3a8bb2e674f60e62de2c
 URL:		http://matthewmarshall.org/projects/rabbyt/
 BuildRequires:	ncurses-devel
 BuildRequires:	python-Pyrex
@@ -18,6 +18,7 @@ BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
 BuildRequires:	sed >= 4.0
+BuildRequires:	unzip
 %pyrequires_eq	python-libs
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -60,4 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{py_sitedir}/rabbyt
 %{py_sitedir}/rabbyt/*.py[co]
 %attr(755,root,root) %{py_sitedir}/rabbyt/*.so
+%if "%{py_ver}" > "2.4"
 %{py_sitedir}/Rabbyt-*.egg-info
+%endif
