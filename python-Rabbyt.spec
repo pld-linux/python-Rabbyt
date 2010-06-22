@@ -10,7 +10,7 @@ License:	MIT
 Group:		Libraries/Python
 Source0:	http://cheeseshop.python.org/packages/source/R/Rabbyt/%{module}-%{version}.zip
 # Source0-md5:	bb603a5cb02f3a8bb2e674f60e62de2c
-URL:		http://matthewmarshall.org/projects/rabbyt/
+URL:		http://pypi.python.org/pypi/Rabbyt/
 BuildRequires:	ncurses-devel
 BuildRequires:	python-Pyrex
 BuildRequires:	python-devel
