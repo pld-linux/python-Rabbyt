@@ -17,7 +17,7 @@ BuildRequires:	python-Pyrex
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	sed >= 4.0
 BuildRequires:	unzip
 %pyrequires_eq	python-libs
